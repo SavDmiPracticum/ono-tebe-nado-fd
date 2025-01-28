@@ -102,6 +102,7 @@
 
 .overlay {
   position: absolute;
+  z-index: 0;
   inset: 0;
   background: #000;
   opacity: 0.6;
@@ -282,11 +283,11 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   margin-top: 180px;
+  padding-bottom: 82px;
 }
 
 .footer__address {
   max-width: 250px;
-  justify-self: end;
   justify-self: start;
   margin-left: 51px;
 }
