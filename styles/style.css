@@ -4,11 +4,10 @@
 }
 
 .header {
-  height: 293px;
-  padding: 85px 50px;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
   align-items: center;
+  padding: 93px 50px 96px;
 }
 
 .header__menu {
@@ -65,9 +64,9 @@
 }
 
 .cover {
-  height: 757px;
+  min-height: 757px;
   position: relative;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -134,6 +133,7 @@
   background: transparent;
   padding: 12px 32px 11px 31px;
   border: solid 1px #fff;
+  cursor: pointer;
 }
 
 .letter-spacing-extended {
@@ -157,6 +157,7 @@
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 25px;
   margin-top: 27px;
@@ -180,6 +181,8 @@
   flex-direction: column;
   padding: 48px 40px;
   justify-content: space-between;
+  background-size: cover;
+  background-position: center;
 }
 
 .card__title {
@@ -204,21 +207,15 @@
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .lots__look-more-link {
@@ -246,7 +243,7 @@
   width: 240px;
   height: 240px;
   background-color: #000;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .about__logo-image {
@@ -267,16 +264,14 @@
 }
 
 .about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
   color: #000;
   padding-right: 50px;
-  margin-bottom: 24px;
-}
-
-.about__text-no-bottom {
-  margin-bottom: 0;
 }
 
 .footer {
